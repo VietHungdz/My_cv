@@ -1,0 +1,27 @@
+.about{
+    margin: 40px auto;
+}
+.profile-img{
+    max-width: 466px;
+    max-height: 488px;
+    overflow: hidden;
+    border-radius: 16px;
+    object-fit: cover;
+    display: flex;
+    border: 1px solid $yellowColor;
+}
+.about-text p{
+    padding: 10px 15px;
+}
+.info_list {
+    & ul{
+
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 10px;
+
+        & li{
+            list-style: none;
+        }
+    }
+}

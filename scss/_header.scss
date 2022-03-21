@@ -1,0 +1,84 @@
+
+#header{
+    background:hotpink;  
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    & .navbar{
+        padding: 0;
+
+        & .navbar-collapse{
+            flex-grow: 1;
+            align-items: center;
+            justify-content: space-between;
+           
+           & .navbar-brand {
+            font-family: cursive;
+            padding: 0;
+            text-align: center;
+            color:$yellowColor;
+               & h1{
+                padding: 0;
+                margin: 0;
+               }
+           }
+    
+           & .ml-auto{
+               
+                 &.nav-item{
+                    margin-left: auto !important;
+                 }
+           }
+           & .navbar-nav{
+
+                & .nav-item{
+                    border-left:1px solid black ;
+                    
+                    & .nav-link{
+                        font-family: "permanent Market";
+                        font-size: 18px;
+                        line-height: 1.4rem;
+                        padding: 30px 16px;
+                        position: relative;
+                        color: $white;
+                        font-weight: 500;
+                        text-shadow: 1px 1px $gray;
+
+                        &:after{
+                            content: "";
+                              position: absolute;
+                              left: 0;
+                              bottom: 0;
+                              margin: auto;
+                              height: 3px;
+                              background: #0347ab;
+                              transition: all 0.5s;
+                              width: 100%;
+                              transform: scaleX(0);
+                          }
+                        &:hover{
+                            background: $green;
+                        }
+                        &:hover::after{
+                            transform: scale(1);
+                        }
+                    }
+                   
+                   
+                }
+                & .nav-item:first-child{
+                    border: none;
+                }
+            }
+          
+        }
+    }
+  
+    
+    
+}
+

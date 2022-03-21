@@ -1,0 +1,254 @@
+.pricing{
+    background: $gray;
+}
+
+.pricing-plan_wrap{
+    color: $white;
+    text-align: center;
+    transition:  1s ease-in 0s;
+    padding: 10px;
+    margin: 20px 15px;
+    border: 1px solid #fff;
+    
+    & .pricing-plan_icon{
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition:  1s ease-in 0s;
+      
+        & i{
+            height: 32px;
+            font-size: 32px;
+            color: $ogrigin;
+            transition:  1s ease-in 0s;
+        }
+       
+    }
+
+    & .rocket-dady.pricing-plan_icon {
+        position: relative;
+
+        & i.rocket_tow {
+            position: absolute;
+            bottom: -38px;
+            left: calc(50% - 50px);
+        }
+    }
+
+    & .pricing-plan_name{
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+   
+    & .pricing-plan_amount{
+
+        & .number{
+            margin: 15px;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 54px;
+            line-height: 36px;
+            font-weight: 800;
+            color: #fff;
+
+            & .dollar , .period{
+                position: absolute;
+                left: -15px;
+                top: -5px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 14px;
+                color: rgba(255,255,255,.8);
+                font-weight: 400;
+
+            }
+
+            & .period{
+                position: absolute;
+                left: auto;
+                right: -55px;
+                top: auto;
+                bottom: -5px;
+                width: 50px;
+                text-align: left;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    & .pricing-plan_feature-list{
+
+        & ul{
+            padding: 0;
+
+            & li{
+                list-style: none;
+                
+                &.line-through{
+                    text-decoration: line-through;
+                }
+
+                
+                &.dady_new{
+                    position: relative;
+
+                    & .new{
+                        position: absolute;
+                        color: #fff;
+                        background: #51a042 ;
+                        padding: 2px 15px;
+                        border-radius: 10px;
+                        font-size: 10px;
+                        top: -8px;
+                        left: calc(100% - 70px);
+                    }
+
+                    & .new::before{
+                        position: absolute;
+                        content: "";
+                        border: 6px solid ;
+                        left: -5px;
+                        top: 8px;
+                        border-color:  #51a042  #51a042  transparent transparent;
+                        transform: rotate(60deg);
+                    }
+                }
+            }
+
+            
+            
+        }
+    }
+
+    & .btn-pricing{
+        padding: 0 35px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        height: 64px;
+        line-height: 62px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+        background: 0 0;
+        outline: none;
+        border: 1px solid #c6cacf;
+        cursor: pointer;
+        transition: 0.5s ease-in;
+        
+        & .btn-pricing_baby{
+            position: relative;
+            top: -3px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 16px;
+
+            & span{
+                // text-shadow: 0px 16px #68e0cf;
+                position: relative;
+                overflow: hidden;
+                display: block;
+
+                & em{
+                    min-width: 5px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-style: normal;
+                    backface-visibility: hidden;
+
+                   
+                }
+                
+                & em:nth-child(1){
+                    transition-delay: .05s;
+                    
+                    
+                }
+                & em:nth-child(2){
+                    transition-delay: .075s;
+                    
+                }
+                & em:nth-child(3){
+                    transition-delay: .1s;
+                    
+                }
+                & em:nth-child(4){
+                    transition-delay: .125s;
+                    
+                }
+                & em:nth-child(5){
+                    transition-delay: .15s;
+                    
+                }
+                & em:nth-child(6){
+                    transition-delay: .175s;
+                    
+                }
+                & em:nth-child(7){
+                    transition-delay: .2s;
+                    
+                }
+    
+            }
+
+
+        }
+
+        &:hover{
+            background: linear-gradient(to right, #746e05, #e2281c );
+            border-bottom-right-radius: 70px;
+            border-top-left-radius: 70px;
+            padding: 0px 85px;
+        }
+
+        &:hover .btn-pricing_baby{
+            color:#68e0cf ;
+
+            & span{
+
+                & em:nth-child(1){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(2){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(3){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(4){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(5){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(6){
+                    transform: translateY(-3px);
+                }
+            
+                & em:nth-child(7){
+                    transform: translateY(-3px);
+                }
+            
+            }
+
+        }
+
+        &:hover .rocket-dady i{
+            transform: translate(100%, -120%);
+            
+        }
+    }
+}

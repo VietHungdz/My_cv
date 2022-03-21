@@ -1,0 +1,8 @@
+@mixin bgc($bgcolor: #fac921) {
+    background-color:$bgcolor ;
+}
+
+@mixin sizeHeader($width, $height){
+    width: 30%;
+    height: 3px;
+}

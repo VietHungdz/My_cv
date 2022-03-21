@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.title-wrap{
+    margin: 0 auto 60px;
+    max-width: 444px;
+
+    & .section-title_box{
+        position: relative;
+        border-bottom: 1px solid $yellowColor;
+        margin: 0 0 60px;
+        text-align: center;
+        padding: 20px 10px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 35%;
+            width: 30%;
+            height: 3px;
+            display: block;
+            background: $yellowColor;
+         
+        }
+        & .section-title_my{
+            color: $white;
+        }
+        & span{
+            color: $yellowColor;
+        }
+        & strong{
+            color: $yellowColor;
+        }
+
+    }
+}
+.introl-text{
+    margin-bottom: 20px ;
+
+    & p{
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+    }
+}
+.list-inline{
+
+    & ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+
+        & li{
+            list-style: none;
+            font-size: 1.3rem;
+            margin: 0 auto;
+            display: inline-block;
+
+            & .social_icon{
+                text-decoration: none;
+                color: $white;
+                display:inline-block;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                border-left: 6px;
+                border-right: 6px;
+                margin: 5px 10px;
+                overflow: hidden;
+                border-top-left-radius:15px ;
+                border-bottom-right-radius: 15px;
+                transition: all 0.5s ;
+
+                &:hover{
+    
+                    border:1px solid rgba(255, 255, 255, 0.2);
+                   
+                }
+                & i{
+                    font-size: 22px;
+                    line-height: 40px;
+                    display: block;
+                    transition: all 0.5s ease-in 0s;
+                }
+                &:hover i{
+                    transform: translateY(-100%);
+                }
+                &-facebook:hover{
+                    background: #3b5998;
+                }
+                &-youtube:hover{
+                    background: #bb0000; 
+                }
+                &-instagram:hover{
+                    background: #0077b5;
+                }
+                &-twitter:hover{
+                    background: #00acee; 
+                }
+                &-telegram:hover{
+                    background: #32b9ee;; 
+                }
+                &-pinterest:hover{
+                    background: #cb2027; 
+                }
+            }
+        }
+    } 
+  
+        
+    
+    
+}

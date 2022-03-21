@@ -1,0 +1,159 @@
+.contact{
+    margin-top: 40px;
+    background: $gray;
+}
+
+.title-box{
+    border-bottom: 1px dotted $yellowColor;
+    margin:20px 0 40px;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "";
+        height: 6px;
+        width: 100px;
+        background: $yellowColor;
+        bottom:  -3px;
+        left: -2px;
+    }
+}
+
+.contact-form{
+    position: relative;
+    padding: 30px 15px 10px;
+    background: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    transition: all 3s ease-in;
+    margin-bottom: 30px;
+
+    & .form-group{
+        position: relative;
+        margin: 10px 0px 30px;
+    
+        & .help-block{
+            position: absolute;
+            top: -24px;
+            padding-left: 42px;
+            color: #e91313;
+        }
+
+        & .form-control{
+            color: black;
+            border: 1px solid #04b962;
+            font-size: 16px;
+            padding-left: 50px;
+            outline: none;
+            
+
+             & textarea{
+                min-height: calc(1.5em + 0.75rem + 2px);
+                color: black;
+            }
+        }
+
+        & .input-group_icon{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 40px;
+            display: table-cell;
+            text-align: center;
+            font-size: 14px;
+            padding: 8px;
+            background:#04b962;
+            border-radius: 5px;
+            transition: all 0.2s ease 0s;
+            vertical-align: top;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+
+        
+          
+        & .btn {
+            transition: all 0.5s ease 0s;
+            width: 150px;
+           &#submit::after{
+                content: "\f0a9";
+                font-family: "Font Awesome 5 Free";
+                font-weight: bold;
+                font-size: 20px;
+                color: #000;
+                position: absolute;
+                right: 50px;
+                -webkit-transition: all .3s ease 0s;
+                -moz-transition: all .3s ease 0s;
+                -ms-transition: all .3s ease 0s;
+                -o-transition: all .3s ease 0s;
+                transition: all .3s ease 0s;
+                opacity: 0;
+           }
+           &:hover#submit::after{
+                right: 10px;
+                opacity: 1;
+           }
+
+           &:hover{
+               color: #000;
+           }
+
+            &.disabled {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            &.btn-shutter-out-horizontal {
+                margin: 10px 0px;
+                font-size: 18px;
+                color: #fff;
+                display: inline-block;
+                position: relative;
+                transition-duration: 0.3s;
+                transition-property: color;
+                vertical-align: middle;
+                overflow: hidden;
+                background-color: #04b962;
+                box-shadow: 0 0 1px transparent;
+                transform: perspective(1px) translateZ(0px);
+    
+                &::before{
+                    background-color: #fff;
+                    bottom: 0;
+                    content: "";
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    transform: scaleX(0);
+                    transform-origin: 50%;
+                    transition-property: transform;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-out;
+                    z-index: -1;
+            
+                }
+    
+                &:hover::before{
+                    transform: scaleX(1);
+    
+                }
+                &:hover{
+                    color: #000;
+                }
+           
+            }
+        }
+       
+
+        & .sub-text {
+            right: 30px;
+            bottom: 50px;
+            color: #e91313;
+            font-size: 14px;
+            position: absolute;
+        }
+    }
+}
+

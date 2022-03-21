@@ -1,0 +1,146 @@
+$n: 15;
+$s: 500;
+
+
+$shadow: ();
+
+@for $i from 1 through $s{
+    $x: random(3000);
+    $y: random(1200);
+    $shadow: $shadow, ( $x+px $y+px #fff) !global;
+}
+
+.star {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadow;
+}
+  
+@for $i from 1 through $n {
+        $v: random(90) + 9;    //   left
+        $h: random(250) + 50; // top
+        $d: random(70)/10 +3;  //   second
+
+        .meteor-#{$i}{
+            position: absolute;
+            top: $h + px;
+            left: $v*1%;
+            width: 300px;
+            height: 1px;
+            transform: rotate(-45deg);
+            background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+            animation: meteor $d+s linear  infinite;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 5px;
+            border-radius: 50%;
+            margin-top: -2px;
+            background: rgba(#fff,.7);
+            box-shadow: 0 0 15px 3px #fff;
+        }
+    }
+
+}
+
+@keyframes meteor {
+    0% {
+        opacity: 1;
+        margin-top: -300px;
+        margin-right: -300px;
+    }
+    12% {
+        opacity: 1;
+      }
+    15% {
+        margin-top: 300px;
+        margin-left: -600px;
+        opacity: 0;
+    }
+   
+    100% {
+        opacity: 0;
+      }
+}
+#home{
+ & .home-banner1{
+        height: 100vh;
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+       & .meteor{
+        height: 100%;
+       
+       }
+
+        & .banner-content{
+            padding: 10px 15px;
+            border-radius: 25px;
+            position: absolute;
+            top: 40%;
+            left: 40px;
+            color:$white;
+            background: rgba(0, 0, 0, 0.3);
+            
+            & h2{
+                & span{
+                    color: $yellowColor;
+                }
+            }
+            & .banner-text{
+                text-align: center;
+                margin: 30px 0 20px 0;
+            }
+            & .btn-banner_about{
+                font-size: 16px;
+                font-weight: 400;
+                float: right;
+                padding: 10px 18px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: $white;
+                border-radius: 10px;
+                background: $yellowColor;
+                transition: all 1s;
+
+                &:hover{
+                    padding: 10px 30px;
+                    color: $gray;
+                }
+            }
+        }
+
+        .home {
+           
+            &.list-inline{
+                position: absolute;
+                bottom: 10%;
+                right: 30px;
+                margin-right: 30px;
+
+            }
+            
+           
+
+            &-li{
+                padding: 10px 15px;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 768px){
+    #home .home-banner1 .banner-content{
+        top: 20%;
+    }
+}

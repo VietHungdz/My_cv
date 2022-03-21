@@ -1,0 +1,44 @@
+.border-blog{
+    overflow: hidden;
+    border-bottom-right-radius: 50px !important;
+
+    & .card-img-top{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    & .card-footer {
+        background:  #f0f0f0 ;
+        padding: 10px 15px;
+        transition: 1s ease-in;
+        border-bottom-right-radius: 50px !important;
+
+        & .text-muted{
+
+            & span{
+                color: black;
+                transition: 1s ease-in;
+
+                & a{
+                    text-decoration: none;
+                    color: black;
+                    padding: 10px 5px;
+                    transition: 1s ease-in;
+                }
+            }
+        }
+        
+        &:hover{
+            background: $ogrigin;
+            
+            & .text-muted span{
+                color: #fff;
+                
+                & a{
+                    color: #fff;
+                }
+            }
+        }
+        
+    } 
+}
