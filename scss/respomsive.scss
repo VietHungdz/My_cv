@@ -21,6 +21,22 @@
         display: block;
         
     }
+    // about
+    .profile-img,
+    .about-text{
+        transform: translateX(0);
+    }
+    // BLOG
+      .border-blog{
+        transform: translate(0) !important;
+    }
+
+    //Contact
+    .contact_left,
+    .contact_right{
+        transform: translate(0) !important;
+    }
+
     // PORTFOLIO
     .list-inline_icon {
         transform: translate(0) !important;
@@ -35,15 +51,9 @@
         opacity: 1;
     }
 
-    // BLOG
-    .border-blog{
+    // sirvices
+    .section-box {
         transform: translate(0) !important;
+        transition-delay: 0;
     }
-
-    //Contact
-    .contact_left,
-    .contact_right{
-        transform: translate(0) !important;
-    }
-
 }
