@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .isotopeContainer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .info_list ul {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    list-style: circle;
+  }
+  .banner-content {
+    top: 10%;
+  }
+  .list-inline_home {
+    display: none;
+  }
+  .new {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .new {
+    display: block;
+  }
+}
+/*# sourceMappingURL=respomsive.css.map */

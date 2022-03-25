@@ -19,5 +19,31 @@
 @media only screen and (max-device-width: 480px) {
     .new{
         display: block;
+        
     }
+    // PORTFOLIO
+    .list-inline_icon {
+        transform: translate(0) !important;
+    
+    }
+    .isotopeSelector{
+        transform: translate(0) !important;
+    }
+
+    // Pricing
+    .pricing-plan_wrap{
+        opacity: 1;
+    }
+
+    // BLOG
+    .border-blog{
+        transform: translate(0) !important;
+    }
+
+    //Contact
+    .contact_left,
+    .contact_right{
+        transform: translate(0) !important;
+    }
+
 }

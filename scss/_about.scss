@@ -1,6 +1,12 @@
 .about{
-    margin: 40px auto;
+    padding: 40px;
+  
+    &:hover .profile-img,
+    &:hover .about-text{
+        transform: translateX(0);
+    }
 }
+
 .profile-img{
     max-width: 466px;
     max-height: 488px;
@@ -9,9 +15,19 @@
     object-fit: cover;
     display: flex;
     border: 1px solid $yellowColor;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+   
+
+    
 }
-.about-text p{
-    padding: 10px 15px;
+.about-text {
+        transform: translateX(100%);
+        transition: 1s ease-in-out;
+    & p{
+        padding: 10px 15px;
+    }
+    
 }
 .info_list {
     & ul{

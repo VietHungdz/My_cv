@@ -1,6 +1,30 @@
 .portfolio{
     margin: 40px 0;
+    
+    &:hover .list-inline_icon:nth-child(1),
+    &:hover .list-inline_icon:nth-child(2),
+    &:hover .list-inline_icon:nth-child(3),
+    &:hover .list-inline_icon:nth-child(4),
+    &:hover .list-inline_icon:nth-child(5),
+    &:hover .list-inline_icon:nth-child(6),
+    &:hover .list-inline_icon:nth-child(7){
+        transform: translateY(0);
 
+        &:hover a{
+            transform: translateY(-100%);
+        }
+    }
+
+    &:hover .isotopeSelector:nth-child(1),
+    &:hover .isotopeSelector:nth-child(2),
+    &:hover .isotopeSelector:nth-child(3),
+    &:hover .isotopeSelector:nth-child(4),
+    &:hover .isotopeSelector:nth-child(5),
+    &:hover .isotopeSelector:nth-child(6),
+    &:hover .isotopeSelector:nth-child(7),
+    &:hover .isotopeSelector:nth-child(8){
+        transform: translate(0);
+    }
 }
 .list-inline{
     display: flex;
@@ -15,6 +39,10 @@
 
 }
 
+.filter-container{
+    padding: 0px 15px;
+    margin: 15px;
+}
 .filter{
     &.list-inline{
         & li{
@@ -28,132 +56,191 @@
             overflow: hidden;
             text-align: center;
 
-            & a{
-                display:block;
-                text-decoration: none;
-                color: #fff; 
-                font-size: 16px;
-                font-weight: 600;
-                transition: all 0.5s ease-in;
-            }
+        }
+       
+        & a{
+            display:block;
+            text-decoration: none;
+            color: #fff; 
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.5s ease-in;
 
-            &:hover a{
-                transform: translateY(-110%);
-            }
-        }  
+          
+        }
+       
     }
 }
+
+.list-inline_icon:nth-child(1){
+    transform: translateY(-140%);
+}
+
+.list-inline_icon:nth-child(2){
+    transform: translateY(160%);
+}
+
+.list-inline_icon:nth-child(3){
+    transform: translateY(-140%);
+}
+
+.list-inline_icon:nth-child(4){
+    transform: translateY(160%);
+}
+
+.list-inline_icon:nth-child(5){
+    transform: translateY(-140%);
+}
+
+.list-inline_icon:nth-child(6){
+    transform: translateY(160%);
+}
+
+.list-inline_icon:nth-child(7){
+    transform: translateY(-140%);
+}  
+
 
 .isotopeContainer{
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-gap: 20px;
+    grid-gap: 6px;
 
-    & .portfolio-wrapper{
-        height: 383px;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        cursor: pointer;
-        margin-bottom: 30px;
-        border: 1px solid salmon;
-        overflow: hidden;
-        position: relative;
-        transition: 1s ease-in;
+    & .isotopeSelector{
+        transition: 1s ease-in-out ;
 
-        & .portfolio-overlay{
-            height: 100%;
+        & .portfolio-wrapper{
+            height: 383px;
             width: 100%;
-            padding: 10px;
-            position: absolute;
-            top: 0;
-            z-index: 2;
-            background: rgba(0, 0, 0, 0.8);
-            transition: all 1s ease-in-out;
-            opacity: 0;
-
-            &::after{
-                content: "";
-                height: 0;
-                width: 0;
-                position: absolute;
-                bottom: 10%;
-                right:10%;
-                z-index: 3;
-                border-width: 9px;
-                transition: height 10s ease 0.15s
-            }
-            &::before{
-                content: "";
-                height: 0;
-                width: 0;
-                position: absolute;
-                top: 10%;
-                left: 10%;
-                z-index: 3;
-                border-width: 9px;
-                transition: height 0.5s ease 0.15s;
-            }
-            &_inner{
-                display: table;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            margin-bottom: 30px;
+            border: 1px solid salmon;
+            overflow: hidden;
+            position: relative;
+            transition: 1s ease-in;
+    
+            & .portfolio-overlay{
                 height: 100%;
                 width: 100%;
-                text-align: center;
-                
-                & .portfolio-overlay_content{
-                    display: table-cell;
-                    vertical-align: middle;
-                  
-                    & .portfolio-link {
-                        margin: 10px;
-
-                        & a{
-                            height: 30px;
-                            width: 30px;
-                            padding: 5px 10px;
-                            margin: 0px 5px;
-                            border: 1px solid #fff;
-                            color: #fff;
-                            text-decoration: none;
-                        }
-                    }
-                    & .portfolio-caption {
-                        & h4{
+                padding: 10px;
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                background: rgba(0, 0, 0, 0.8);
+                transition: all 1s ease-in-out;
+                opacity: 0;
+    
+                &::after{
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    bottom: 10%;
+                    right:10%;
+                    z-index: 3;
+                    border-width: 9px;
+                    transition: height 10s ease 0.15s
+                }
+                &::before{
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    z-index: 3;
+                    border-width: 9px;
+                    transition: height 0.5s ease 0.15s;
+                }
+                &_inner{
+                    display: table;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    
+                    & .portfolio-overlay_content{
+                        display: table-cell;
+                        vertical-align: middle;
+                      
+                        & .portfolio-link {
+                            margin: 10px;
+    
                             & a{
-                                text-decoration: none;
+                                height: 30px;
+                                width: 30px;
+                                padding: 5px 10px;
+                                margin: 0px 5px;
+                                border: 1px solid #fff;
                                 color: #fff;
-                                & span{
-                                    font-weight: 600 ;
-                                    color: var(--yellow-color);
-                                    text-shadow: 1px -1px 0px #767676,  2px 2px 1px #737272, 2px 4px 1px #767474,
-                                                    3px 5px 1px #685a5a,  4.5px 6px 1px #7a7a7a, 6px 6px 1px #7f7f7f;
+                                text-decoration: none;
+                            }
+                        }
+                        & .portfolio-caption {
+                            & h4{
+                                & a{
+                                    text-decoration: none;
+                                    color: #fff;
+                                    & span{
+                                        font-weight: 600 ;
+                                        color: var(--yellow-color);
+                                        text-shadow: 1px -1px 0px #767676,  2px 2px 1px #737272, 2px 4px 1px #767474,
+                                                        3px 5px 1px #685a5a,  4.5px 6px 1px #7a7a7a, 6px 6px 1px #7f7f7f;
+                                    }
+                                    
                                 }
-                                
                             }
                         }
                     }
                 }
+              
             }
-          
-        }
-        &:hover .portfolio-overlay{
-            opacity: 1;
-            transform: scale(1);
-        }
-        &:hover .portfolio-overlay::before{
-            border-top: 1px solid #fff;
-            border-right: 1px solid #fff;
-            height: 80%;
-            width: 80%;
-            transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s ;
-        }
-        &:hover .portfolio-overlay::after{
-            border-bottom: 1px solid #fff;
-            border-left:  1px solid #fff;
-            height: 80%;
-            width: 80%;
-            transition: width 0.1s ease 0.8s, height 0.1s ease 0.9s ;
+            &:hover .portfolio-overlay{
+                opacity: 1;
+                transform: scale(1);
             }
+            &:hover .portfolio-overlay::before{
+                border-top: 1px solid #fff;
+                border-right: 1px solid #fff;
+                height: 80%;
+                width: 80%;
+                transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s ;
+            }
+            &:hover .portfolio-overlay::after{
+                border-bottom: 1px solid #fff;
+                border-left:  1px solid #fff;
+                height: 80%;
+                width: 80%;
+                transition: width 0.1s ease 0.8s, height 0.1s ease 0.9s ;
+                }
+        }
     }
+   
+}
+
+.isotopeSelector:nth-child(1){
+    transform: translate(-100%, -100%);
+}
+.isotopeSelector:nth-child(2){
+    transform: translateY(-100%);
+}
+.isotopeSelector:nth-child(3){
+    transform: translateY(-100%);
+}
+.isotopeSelector:nth-child(4){
+    transform: translate(100%, -100%);
+}
+.isotopeSelector:nth-child(5){
+    transform: translate(-100%, 100%)
+}
+.isotopeSelector:nth-child(6){
+    transform: translateY(100%);
+}
+.isotopeSelector:nth-child(7){
+    transform: translateY(100%);
+}
+.isotopeSelector:nth-child(8){
+    transform: translate(100%, 100%)
 }
 

@@ -11,6 +11,17 @@
     & .navbar{
         padding: 0;
 
+        & .navbar-toggler{
+            padding: 0.25rem 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1; 
+            background-color: transparent; 
+            border: 1px solid #04b962;
+            border-radius: 0.25rem;
+            height: 50px;
+            margin: 5px;
+        }
+
         & .navbar-collapse{
             flex-grow: 1;
             align-items: center;
@@ -82,3 +93,27 @@
     
 }
 
+.menubar1, .menubar2, .menubar3{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #04b962;
+    margin: 5px 0;
+    transition: 0.3s;
+
+}
+
+
+.mgschangemenu-bar .menubar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: #ff0000;
+}
+.mgschangemenu-bar .menubar2 {
+	opacity: 0;
+}
+.mgschangemenu-bar .menubar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #ff0000;
+}
