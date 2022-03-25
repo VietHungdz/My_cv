@@ -1,15 +1,17 @@
 .blog{
     
-    &:hover .border-blog{
+  
+}
+.section{
+    &.active .border-blog{
         transform: translate(0);
-        transition-delay: .1s;
     }
 }
 .border-blog{
     overflow: hidden;
     border-bottom-right-radius: 50px !important;
     transform: translateX(-500%);
-    transition: all 2s ease-in-out 10s;
+    transition: all 2s ease-in-out;
 
     & .card-img-top{
         height: 300px;

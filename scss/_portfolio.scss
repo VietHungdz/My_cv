@@ -1,13 +1,11 @@
-.portfolio{
-    margin: 40px 0;
-    
-    &:hover .list-inline_icon:nth-child(1),
-    &:hover .list-inline_icon:nth-child(2),
-    &:hover .list-inline_icon:nth-child(3),
-    &:hover .list-inline_icon:nth-child(4),
-    &:hover .list-inline_icon:nth-child(5),
-    &:hover .list-inline_icon:nth-child(6),
-    &:hover .list-inline_icon:nth-child(7){
+.section{
+    &.active .list-inline_icon:nth-child(1),
+    &.active .list-inline_icon:nth-child(2),
+    &.active .list-inline_icon:nth-child(3),
+    &.active .list-inline_icon:nth-child(4),
+    &.active .list-inline_icon:nth-child(5),
+    &.active .list-inline_icon:nth-child(6),
+    &.active .list-inline_icon:nth-child(7){
         transform: translateY(0);
 
         &:hover a{
@@ -15,16 +13,22 @@
         }
     }
 
-    &:hover .isotopeSelector:nth-child(1),
-    &:hover .isotopeSelector:nth-child(2),
-    &:hover .isotopeSelector:nth-child(3),
-    &:hover .isotopeSelector:nth-child(4),
-    &:hover .isotopeSelector:nth-child(5),
-    &:hover .isotopeSelector:nth-child(6),
-    &:hover .isotopeSelector:nth-child(7),
-    &:hover .isotopeSelector:nth-child(8){
+    &.active .isotopeSelector:nth-child(1),
+    &.active .isotopeSelector:nth-child(2),
+    &.active .isotopeSelector:nth-child(3),
+    &.active .isotopeSelector:nth-child(4),
+    &.active .isotopeSelector:nth-child(5),
+    &.active .isotopeSelector:nth-child(6),
+    &.active .isotopeSelector:nth-child(7),
+    &.active .isotopeSelector:nth-child(8){
         transform: translate(0);
     }
+}
+
+.portfolio{
+    margin: 40px 0;
+    
+   
 }
 .list-inline{
     display: flex;

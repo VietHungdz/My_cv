@@ -1,22 +1,23 @@
-.footer{
-    padding: 40px;
-    background: #ededed ;
-
-    &:hover .footer-title,
-    &:hover .footer-end{
+.seciton{
+    
+    &.active .footer-title,
+    &.active .footer-end{
         transform: translateY(0);
     }
 
-    &:hover .footer-text{
+    &.active .footer-text{
         opacity: 1;
     }
-
+}
+.footer{
+    padding: 40px;
+    background: #ededed ;
     & .footer-title{
         font-family: cursive;
         padding: 10px 0;
         text-align: center;
         color: $yellowColor;
-        animation:  footerAnimation  60s ease-in forwards infinite;
+        animation:  footerAnimation  2s ease-in ;
         
         
         & h1{
@@ -31,7 +32,7 @@
         padding: 10px 0;
         margin: auto;
         text-align: center;
-        animation: footerOpacity 60s ease-in forwards infinite;
+        animation: footerOpacity 2s ease-in ;
         
         & a{
             color: #fe4c50;
@@ -42,7 +43,7 @@
     & .footer-end{
         padding: 10px 0;
         margin: auto;
-        animation: footerAnimation_tow 60s ease-in forwards infinite;
+        animation: footerAnimation_tow 2s ease-in ;
         
        
     }

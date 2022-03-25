@@ -1,37 +1,42 @@
-.sirvice{
-    background: $gray;
-    
-    &:hover .section-box_left{
+.section{
+    &.active .section-box_left{
         transform: translateX(0) !important;
     }
-    &:hover .section-box_right{
+    &.active .section-box_right{
         transform: translateX(0) !important;
     }
 
-    &:hover .section-box:nth-child(1){
+    &.active .section-box:nth-child(1){
         transition-delay: 0.5s   ;
         
     }
 
-    &:hover .section-box:nth-child(2){
+    &.active .section-box:nth-child(2){
         transition-delay: 0.5s;
     }
 
-    &:hover .section-box:nth-child(3){
+    &.active .section-box:nth-child(3){
         transition-delay: 0.75s;
     }
 
-    &:hover .section-box:nth-child(4){
+    &.active .section-box:nth-child(4){
         transition-delay: 0.75s;
     }
 
-    &:hover .section-box:nth-child(5){
+    &.active .section-box:nth-child(5){
         transition-delay: 1s;
     }
 
-    &:hover .section-box:nth-child(6){
+    &.active .section-box:nth-child(6){
         transition-delay: 1s;
     }
+}
+
+
+.sirvice{
+    background: $gray;
+    
+   
  
     & .section-wrap{
         width: 100%;

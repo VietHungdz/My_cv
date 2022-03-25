@@ -1,8 +1,10 @@
 .about{
     padding: 40px;
-  
-    &:hover .profile-img,
-    &:hover .about-text{
+}
+
+.section {
+    &.active .profile-img,
+    &.active .about-text{
         transform: translateX(0);
     }
 }

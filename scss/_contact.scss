@@ -2,13 +2,14 @@
     margin-top: 40px;
     background: $gray;
     
-    &:hover .contact_left,
-    &:hover .contact_right{
+    
+}
+.section{
+    &.active .contact_left,
+    &.active .contact_right{
         transform: translate(0);
-        transition: 2s ease-in-out;
     }
 }
-
 .title-box{
     border-bottom: 1px dotted $yellowColor;
     margin:20px 0 40px;
@@ -27,11 +28,11 @@
 
 .contact_left{
     transform: translateX(-120%);
-    transition-delay: 5s ;
+    transition: 1s ease-in;
 }
 .contact_right{
     transform: translateX(120%);
-    transition-delay: 5s ;
+    transition: 1s ease-in;
    
 }
 
